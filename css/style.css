@@ -1,0 +1,84 @@
+body {
+  background-color: hsl(230, 1%, 98%);
+  font-family: "Inconsolata", monospace;
+}
+
+.name {
+  font-family: "Quicksand", sans-serif;
+  color: hsl(230, 8%, 24%);
+  font-weight: 300;
+}
+
+.lattice {
+  color: #a16bc8;
+  font-weight: 700;
+}
+
+.mofrad {
+  color: hsl(221, 87%, 65%);
+  font-weight: 700;
+}
+
+.csm {
+  color: hsl(119, 34%, 47%);
+  font-weight: 700;
+}
+
+.major {
+  /* Berkeley Blue (go bears !)*/
+  color: #003262;
+  font-weight: 700;
+}
+
+.college {
+  /* California Gold (go bears !)*/
+  color: #fdb515;
+  font-weight: 700;
+}
+
+.text {
+  line-height: 1.6 em;
+}
+
+/* .basketball {
+  color: #f27935;
+  font-weight: 700;
+}
+
+.burger {
+  color: #bc8339;
+  font-weight: 700;
+}
+
+.her {
+  color: #e26a6a;
+  font-weight: 700;
+} */
+
+.top-buffer {
+  margin-top: 230px;
+}
+
+.icons {
+  margin-bottom: 10px;
+}
+
+.fa {
+  padding: 5px 0 0 5px;
+  margin-right: 15px;
+  z-index: 1000;
+  transform-origin: left;
+  text-decoration: none;
+}
+
+.icon {
+  color: hsl(230, 8%, 24%);
+}
+
+.icon:hover {
+  text-decoration: none;
+}
+
+.in:hover .fa-linkedin-square:before {
+  content: "\f0e1";
+}
