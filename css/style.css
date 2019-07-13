@@ -10,17 +10,17 @@ body {
 }
 
 .lattice {
-  color: #a16bc8;
+  color: #9585a0;
   font-weight: 700;
 }
 
 .mofrad {
-  color: hsl(221, 87%, 65%);
+  color: hsl(221, 55%, 67%);
   font-weight: 700;
 }
 
 .csm {
-  color: hsl(119, 34%, 47%);
+  color: hsl(119, 39%, 58%);
   font-weight: 700;
 }
 
@@ -55,10 +55,6 @@ body {
   font-weight: 700;
 } */
 
-.top-buffer {
-  margin-top: 230px;
-}
-
 .icons {
   margin-bottom: 10px;
 }
@@ -75,10 +71,72 @@ body {
   color: hsl(230, 8%, 24%);
 }
 
+.intro {
+  margin-top: 20%;
+}
+
 .icon:hover {
   text-decoration: none;
+  color: #9585a0;
 }
 
 .in:hover .fa-linkedin-square:before {
   content: "\f0e1";
+}
+
+.nav-link {
+  /* color: hsl(230, 1%, 98%); */
+  color: hsl(230, 8%, 24%);
+}
+
+.nav-link:hover {
+  /* color: hsl(230, 1%, 98%); */
+  color: hsl(230, 8%, 24%);
+}
+
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #9585a0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.projects {
+  margin-top: 50%;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
