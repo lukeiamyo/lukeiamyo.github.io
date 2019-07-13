@@ -40,21 +40,6 @@ body {
   line-height: 1.6 em;
 }
 
-/* .basketball {
-  color: #f27935;
-  font-weight: 700;
-}
-
-.burger {
-  color: #bc8339;
-  font-weight: 700;
-}
-
-.her {
-  color: #e26a6a;
-  font-weight: 700;
-} */
-
 .icons {
   margin-bottom: 10px;
 }
@@ -72,7 +57,7 @@ body {
 }
 
 .intro {
-  margin-top: 50%;
+  margin-top: 20%;
 }
 
 .icon:hover {
