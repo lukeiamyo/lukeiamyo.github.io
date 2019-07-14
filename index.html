@@ -14,14 +14,9 @@
 
       <!-- Google Fonts -->
       <link
-        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+        href="https://fonts.googleapis.com/css?family=Inconsolata|Karla&display=swap"
         rel="stylesheet"
       />
-      <link
-        href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
-        rel="stylesheet"
-      />
-
       <!-- Bootstrap CSS -->
       <link
         rel="stylesheet"
@@ -29,91 +24,86 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous"
       />
-      <!-- personal CSS -->
+      <!-- Personal CSS -->
       <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
-    <body>
-      <!-- <nav class="navbar navbar-expand-md fixed-top bg-dark">
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-          <ul class="navbar-nav ml-auto">
+    <body data-spy="scroll" data-target=".navbar" data-offset="350">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-sm navbar-light fixed-top"
+        style="background-color:  hsl(230, 1%, 98%);"
+      >
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler navbar-light"
+          data-toggle="collapse"
+          data-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ml-auto navbrdr">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link active" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link rr" href="VishalAmbavaramResume.pdf">Resume</a>
             </li>
           </ul>
         </div>
-      </nav> -->
+      </nav>
 
-      <div class="container">
-        <div class="row">
-          <div class="span6 offset10">
-            <nav class="navbar navbar-expand-md fixed-top">
-              <a
-                href="https://github.com/lukeiamyo"
-                class="navbar-brand github-corner"
-                aria-label="View source on GitHub"
-                ><svg
-                  width="80"
-                  height="80"
-                  viewBox="0 0 250 250"
-                  style="fill:#9585a0; color:#fafafa; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"
-                  ></path>
-                  <path
-                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                    fill="currentColor"
-                    style="transform-origin: 130px 106px;"
-                    class="octo-arm"
-                  ></path>
-                  <path
-                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                    fill="currentColor"
-                    class="octo-body"
-                  ></path>
-                </svg>
-              </a>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Skills</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+      <!-- Social Button Sticky Bar -->
+      <div class="icon-bar">
+        <ul class="icon-bar-list">
+          <li class="icon-bar-list-item mail social">
+            <a class="icon" href="mailto:ambavar98@berkeley.edu">
+              <i
+                class="fa fa-envelope-square fa-lg icon-item"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li class="icon-bar-list-item social">
+            <a class="icon" href="VishalAmbavaramResume.pdf">
+              <i class="fa fa-file-text fa-sm icon-item" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="icon-bar-list-item">
+            <a class="icon" href="https://github.com/lukeiamyo">
+              <i class="fa fa-github fa-lg icon-item" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li class="icon-bar-list-item resume">
+            <a class="icon" href="https://www.linkedin.com/in/vishal1998/">
+              <i
+                class="fa fa-linkedin-square fa-lg icon-item"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <div class="container">
-        <div class="row intro">
-          <div class="col intro-two">
-            <div class="icons">
-              <a class="icon" href="mailto:ambavar98@berkeley.edu">
-                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-              </a>
-              <!-- <a class="icon" href="https://github.com/lukeiamyo">
-                <i class="fa fa-github fa-lg" aria-hidden="true"></i>
-              </a> -->
-              <a class="icon" href="https://www.linkedin.com/in/vishal1998/">
-                <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
-              </a>
-              <a class="icon" href="VishalAmbavaramResume.pdf">
-                <i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>
-              </a>
-            </div>
-            <h3 class="name">Hi! I'm Vishal Ambavaram</h3>
+      <!-- Main Content Start-->
+
+      <!-- About -->
+      <div class="container" id="about">
+        <div class="row intro ">
+          <div class="col offset-md-2 offset-lg-2 intro-two">
+            <h3 class="name typing" id="typing">
+              Hi! My name is Vishal Ambavaram
+            </h3>
             <p class="text">
               Software Engineering Intern @
               <span class="lattice">Lattice Automation</span> <br />
@@ -135,15 +125,244 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="row projects">
-          <div class="col">
-            These are my projects
+      <!-- Work -->
+      <div class="container" id="work">
+        <div class="row cons">
+          <div class="col offset-md-2 offset-lg-2 intro-two">
+            <h3 class="name space-after-head work-head">
+              Work & Extracurriculars
+            </h3>
+            <div class="row">
+              <div class="col-2">
+                <div
+                  class="list-group list-group-mine"
+                  id="list-tab"
+                  role="tablist"
+                >
+                  <a
+                    class="list-group-item list-group-item-action active"
+                    id="list-lattice-list"
+                    data-toggle="list"
+                    href="#list-lattice"
+                    role="tab"
+                    aria-controls="lattice"
+                    >Lattice
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-nifty-list"
+                    data-toggle="list"
+                    href="#list-nifty"
+                    role="tab"
+                    aria-controls="nifty"
+                    >Nifty</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-mofrad-list"
+                    data-toggle="list"
+                    href="#list-mofrad"
+                    role="tab"
+                    aria-controls="mofrad"
+                    >Mofrad Lab</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-csm-list"
+                    data-toggle="list"
+                    href="#list-csm"
+                    role="tab"
+                    aria-controls="csm"
+                    >CSM</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-ulab-list"
+                    data-toggle="list"
+                    href="#list-ulab"
+                    role="tab"
+                    aria-controls="ulab"
+                    >ULab</a
+                  >
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="list-lattice"
+                    role="tabpanel"
+                    aria-labelledby="list-lattice-list"
+                  >
+                    <h4 class="job">
+                      SWE Intern <span class="place">@ Lattice Automation</span>
+                    </h4>
+                    <h6 class="date">Jun - Aug 2019</h6>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-nifty"
+                    role="tabpanel"
+                    aria-labelledby="list-nifty-list"
+                  >
+                    <h4 class="job">
+                      SWE Intern <span class="place">@ Nifty</span>
+                    </h4>
+                    <h6 class="date">Jan - May 2019</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Created and set up a live-demo ready web platform using
+                        React and MDBootstrap for React.
+                      </li>
+                      <li class="job-desc-item">
+                        Created and populated Firebase collections with
+                        test-data and configured to them to work with web
+                        platform. (User Authentication, getter, setter methods).
+                      </li>
+                      <li class="job-desc-item">
+                        Used SCRUM (Agile framework) to develop product. Engaged
+                        in weekly sprints to ensure efficient software
+                        development.
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-mofrad"
+                    role="tabpanel"
+                    aria-labelledby="list-mofrad-list"
+                  >
+                    <h4 class="job">
+                      Research Assistant <span class="place">@ Mofrad Lab</span>
+                    </h4>
+                    <h6 class="date">Jan - May 2019</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Building data infrastructure and analysis pipelines to
+                        scrape, clean and analyze human gut microbiota based on
+                        Metagenomics data.
+                      </li>
+                      <li class="job-desc-item">
+                        Went through rigorous literature reviews to familiarize
+                        myself with the numerous possible analytics pipelines
+                        that we could use while noting the pros and cons of
+                        different methodologies.
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-csm"
+                    role="tabpanel"
+                    aria-labelledby="list-csm-list"
+                  >
+                    <h4 class="job">
+                      CS61B Mentor
+                      <span class="place">@ CSM</span>
+                    </h4>
+                    <h6 class="date">Aug 2018 - Present</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Responsible for teaching an auxiliary weekly section of
+                        students concepts such as Java programming, data
+                        structures, run-time analysis, sorting and shortest path
+                        algorithms from CS61B - Data Structures and Algorithms.
+                      </li>
+                      <li class="job-desc-item">
+                        Led a final review session before the final class exam.
+                        Created a presentation to assist the review session.
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-ulab"
+                    role="tabpanel"
+                    aria-labelledby="list-ulab-list"
+                  >
+                    <h4 class="job">
+                      Web Developer <span class="place">@ ULab</span>
+                    </h4>
+                    <h6 class="date">June - Dec 2018</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Developed the website for the Physics and Astronomy
+                        Branch using HTML/CSS, Javascript and Flask.
+                      </li>
+                      <li class="job-desc-item">
+                        Integrated online python training modules, developed
+                        using Jupyter notebooks, into the website.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Projects -->
+      <div class="container" id="projects">
+        <div class="row cons">
+          <div class="col offset-md-2 offset-lg-2 intro-two">
+            <h3 class="name space-after-head projects-head">Projects</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div class="container" id="interests">
+        <div class="row cons">
+          <div class="col offset-md-2 offset-lg-2 intro-two">
+            <h3 class="name space-after-head interests-head">Interests</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content End-->
+
+      <!-- Footer -->
+      <footer class="foot">
+        <div class="social-mobile">
+          <ul class="social-mobile-links">
+            <li>
+              <a class="foot-social" href="mailto:ambavar98@berkeley.edu">
+                <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="foot-social" href="VishalAmbavaramResume.pdf">
+                <i class="fa fa-file-text fa-sm" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="foot-social" href="https://github.com/lukeiamyo">
+                <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="foot-social"
+                href="https://www.linkedin.com/in/vishal1998/"
+              >
+                <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop-foot">
+          <a class="link" href="https://github.com/lukeiamyo"></a>
+        </div>
+      </footer>
+
+      <button id="topButton" class="btn to-top" onclick="topFunction()">
+        <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      </button>
+
       <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome, then main JS files -->
 
       <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -161,6 +380,8 @@
         crossorigin="anonymous"
       ></script>
       <script src="https://use.fontawesome.com/b765d6eec0.js"></script>
+      <script src="js/scramble.js"></script>
+      <script src="js/main.js"></script>
     </body>
   </html>
 </html>
