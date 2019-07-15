@@ -57,8 +57,8 @@ ul {
   padding-inline-start: 40px;
 }
 
-.cons {
-  margin-top: 30%;
+.text {
+  font-size: 18px;
 }
 
 .name {
@@ -102,7 +102,7 @@ ul {
   margin-top: -15px;
   margin-left: 130px;
 }
-/* .typing {
+.typing {
   position: relative;
 }
 
@@ -113,7 +113,7 @@ ul {
   width: 1px;
   height: 90%;
   border-right: 2px solid #9585a0;
-} */
+}
 
 .navbrdr .active:after {
   background: none repeat scroll 0 0 transparent;
@@ -165,7 +165,7 @@ ul {
 }
 
 .intro {
-  margin-top: 20%;
+  padding-top: 26%;
 }
 
 .icon:hover {
@@ -239,6 +239,10 @@ ul {
 .nav-link {
   /* color: hsl(230, 1%, 98%); */
   color: hsl(230, 8%, 24%) !important;
+}
+
+.techs {
+  color: #9585a0;
 }
 
 .nav-link:hover {
@@ -507,8 +511,12 @@ ul {
   left: 20px;
 }
 
+.cons {
+  padding-top: 21%;
+}
+
 .projs {
-  margin-top: 12%;
+  padding-top: 7%;
 }
 
 .spinner-grow {

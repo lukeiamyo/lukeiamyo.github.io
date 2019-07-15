@@ -21,23 +21,32 @@
 //   });
 // });
 //javascript
-// const texts = "Hi! My name is Vishal Ambavaram";
-// let letter = "";
-// let typeWriteIndex = 0;
-// (function type() {
-//   letter = texts.slice(0, ++typeWriteIndex);
-//   document.querySelector(".typing").textContent = letter;
-//   if (typeWriteIndex === texts.length) {
-//   }
-//   setTimeout(type, 150);
-// })();
+const texts = "Hi! My name is Vishal Ambavaram ";
+let letter = "";
+let typeWriteIndex = 0;
+(function type() {
+  if (typeWriteIndex === texts.length) {
+    $(".typing::after").css("content", "none");
+  }
+  letter = texts.slice(0, ++typeWriteIndex);
+  document.querySelector(".typing").textContent = letter;
+  setTimeout(type, 150);
+})();
+
+// var offset = 300;
+
+// $(".navbar .collapse ul li a").click(function(event) {
+//   event.preventDefault();
+//   $($(this).attr("href"))[0].scrollIntoView();
+//   scrollBy(0, -offset);
+// });
 
 window.onscroll = function() {
   scrollFunction();
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("topButton").style.display = "block";
   } else {
     document.getElementById("topButton").style.display = "none";
