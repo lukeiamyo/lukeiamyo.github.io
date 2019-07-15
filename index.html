@@ -27,7 +27,7 @@
       <!-- Personal CSS -->
       <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="350">
+    <body data-spy="scroll" data-target=".navbar" data-offset="300">
       <!-- Navbar -->
       <nav
         class="navbar navbar-expand-sm navbar-light fixed-top"
@@ -52,9 +52,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#interests">Interests</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link rr" href="VishalAmbavaramResume.pdf">Resume</a>
             </li>
@@ -114,11 +114,11 @@
               <span class="major">Data Science</span> with a domain emphasis<br />
               in <span class="major">Computational Biology</span> at
               <span class="college">UC Berkeley</span>. Go bears! ʕ·ᴥ·ʔ <br />
-              I enjoy watching and playing
+              <!-- I enjoy watching and playing
               <span class="basketball">basketball</span> and I love
               <span class="burger">burgers</span>.
               <br />
-              My favorite movie at the moment is <span class="her">Her</span>.
+              My favorite movie at the moment is <span class="her">Her</span>. -->
               Pls give me a job.
             </p>
           </div>
@@ -198,6 +198,14 @@
                       SWE Intern <span class="place">@ Lattice Automation</span>
                     </h4>
                     <h6 class="date">Jun - Aug 2019</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Building synthetic biology design and automation
+                        microservices using Python, AWS Lambda and the
+                        Serverless framework. (Parser, Aligner, Annotator,
+                        Primer Design)
+                      </li>
+                    </ul>
                   </div>
                   <div
                     class="tab-pane fade"
@@ -211,8 +219,8 @@
                     <h6 class="date">Jan - May 2019</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Created and set up a live-demo ready web platform using
-                        React and MDBootstrap for React.
+                        Built a live-demo ready web platform using React and
+                        MDBootstrap for React.
                       </li>
                       <li class="job-desc-item">
                         Created and populated Firebase collections with
@@ -304,21 +312,79 @@
 
       <!-- Projects -->
       <div class="container" id="projects">
-        <div class="row cons">
+        <div class="row cons projs">
           <div class="col offset-md-2 offset-lg-2 intro-two">
             <h3 class="name space-after-head projects-head">Projects</h3>
+            <div class="card-deck">
+                <div class="card border-light mb-0 first-card" >
+                    <div class="card-header bg-transparent ">
+                      <i class="fa fa-video-camera fa-2x p-head" aria-hidden="true"> </i>      
+                      <a class="float-md-right" href="https://github.com/sahilrao21/LectureSummarization">                
+                      <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
+                    </a> 
+                    </div>
+                    <div class="card-body ">
+                      <h4 class="card-title">TLDW;</h4>
+                      <h6 class="card-subtitle mb-2 text-muted">March 2019</h6>
+                      <p class="card-text">Comand line interface tool that summarizes lectures.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">Python &ensp;  Html/CSS  &ensp; JS</i>
+                    </div>
+                  </div>
+                  <div class="card border-light mb-0" >
+                      <div class="card-header bg-transparent ">
+                        <i class="fa fa-reddit-alien fa-2x p-head" aria-hidden="true"></i>
+                        <a class="float-md-right" href="https://github.com/eashman123/RedditRecommends">              
+                        <i class="fa fa-github-alt p-head-foot p-foot float-md-right" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="card-body ">
+                        <h4 class="card-title">Reddit Recommends</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">November 2018</h6>
+                        <p class="card-text">Product recommendation service leveraging Reddit crowd-sourced opinions.  </p>
+                      </div>
+                      <div class="card-footer bg-transparent">Python &ensp;  Html/CSS &ensp;  JS</div>
+                    </div>
           </div>
+          <div class="card-deck second-deck">
+              <div class="card border-light mb-0 first-card" >
+                  <div class="card-header bg-transparent ">
+                    <i class="fa fa-code-fork fa-2x p-head" aria-hidden="true"> </i>                       
+                    <a class="cs61b float-md-right" href="https://cs61bl.org/su18/projects/gitlet/">Cs61B</a>
+                 
+                  </div>
+                  <div class="card-body ">
+                    <h4 class="card-title">Gitlet</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">July 2018</h6>
+                    <p class="card-text">Barebones version control system mimicking basic features of Git.</p>
+                  </div>
+                  <div class="card-footer bg-transparent">Java</i>
+                  </div>
+                </div>
+                <div class="card border-light mb-0" >
+                    <div class="card-header bg-transparent ">
+                      <i class="fa fa-map fa-2x p-head" aria-hidden="true"></i>
+                      <a class="cs61b float-md-right" href="https://cs61bl.org/su18/projects/bearmaps/">Cs61B</a>
+                    </div>
+                    <div class="card-body ">
+                        <h4 class="card-title">Bear-Maps</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">July 2018</h6>
+                        <p class="card-text">Google-Maps like application servicing the Berkeley area.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">Java</div>
+                  </div>
+        </div>
         </div>
       </div>
 
       <!-- Interests -->
-      <div class="container" id="interests">
+      <!-- <div class="container" id="interests">
         <div class="row cons">
           <div class="col offset-md-2 offset-lg-2 intro-two">
             <h3 class="name space-after-head interests-head">Interests</h3>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Main Content End-->
 
@@ -360,6 +426,10 @@
       <button id="topButton" class="btn to-top" onclick="topFunction()">
         <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
       </button>
+
+      <div class="spinner-grow" role="status">
+          <span class="sr-only"></span>
+        </div>
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome, then main JS files -->

@@ -287,32 +287,6 @@ ul {
   left: 0;
 }
 
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
-
 /* Footer */
 .foot {
   display: flex;
@@ -468,6 +442,79 @@ ul {
   line-height: 24px;
 }
 
+.card-header {
+  border: none;
+}
+
+.card-footer {
+  border: none;
+  font-size: 12px;
+  color: hsl(0, 0%, 41%);
+}
+
+.card {
+  background-color: rgb(236, 238, 243);
+}
+
+.card-title {
+  font-family: "Karla", sans-serif;
+  color: hsl(230, 8%, 24%);
+  font-weight: 400;
+}
+
+.card {
+  transition: transform ease 0.2s;
+  max-width: 22rem;
+  max-height: 18rem;
+}
+
+.card:hover {
+  transform: translateY(-9px);
+}
+
+.p-head-foot:hover {
+  color: #9585a0;
+}
+
+.p-head {
+  margin-top: 20px;
+  color: #9585a0;
+
+  /* margin-left: 200px; */
+}
+
+.p-foot {
+  margin-top: 4px;
+  color: hsl(0, 0%, 41%);
+}
+
+.cs61b {
+  color: hsl(0, 0%, 41%);
+}
+
+.card-subtitle {
+  /* font-family: "Karla", sans-serif; */
+  font-size: 14px;
+}
+
+.second-deck {
+  position: relative;
+  bottom: -10px;
+}
+
+.first-card {
+  position: relative;
+  left: 20px;
+}
+
+.projs {
+  margin-top: 12%;
+}
+
+.spinner-grow {
+  color: #9585a0 !important;
+}
+
 @media (max-width: 62.5em) {
   .icon-bar {
     left: 25px;
@@ -485,6 +532,7 @@ ul {
     display: block;
   }
 }
+
 /* @media (max-width: 48em) {
   .nav-link:hover:after {
     width: 0%;

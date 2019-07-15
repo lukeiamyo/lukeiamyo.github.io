@@ -13,6 +13,13 @@
 //     $that.addClass("active");
 //   });
 // });
+jQuery(document).ready(function($) {
+  $(window).load(function() {
+    $(".spinner-grow").fadeOut("slow", function() {
+      $(this).remove();
+    });
+  });
+});
 //javascript
 // const texts = "Hi! My name is Vishal Ambavaram";
 // let letter = "";
