@@ -4,16 +4,9 @@ html {
 body {
   background-color: hsl(230, 1%, 98%);
   font-family: "Inconsolata", monospace;
-
+  /* padding-top: 70px; */
   /* -webkit-font-smoothing: antialiased; */
 }
-
-/* @media (max-width: 48em) .icon-bar {
-  display: none;
-}
-@media (max-width: 62.5em) .icon-bar {
-  left: 25px;
-} */
 
 *,
 ::before,
@@ -127,10 +120,6 @@ ul {
 .icon {
   color: hsl(234, 7%, 27%);
   padding: 10px;
-}
-
-.intro {
-  padding-top: 26%;
 }
 
 .icon:hover {
@@ -347,17 +336,6 @@ ul {
   font-weight: 900;
 }
 
-.list-group-mine:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 230px;
-  top: -233px;
-  position: relative;
-  background: rgb(236, 238, 243);
-  width: 3px;
-}
 .list-group-item.active:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -368,6 +346,20 @@ ul {
   left: 0px;
   position: absolute;
   background: #9585a0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 3px;
+}
+
+.list-group-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 48px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background: rgb(236, 238, 243);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 3px;
 }
@@ -472,13 +464,19 @@ ul {
   font-size: 14px;
 }
 
+.intro {
+  padding-top: 20%;
+}
+
 .cons {
-  padding-top: 21%;
+  position: relative;
+  padding-top: 16.5%;
+  padding-bottom: 20%;
 }
 
 .projs {
-  padding-top: 7%;
-  /* padding-bottom: 20px; */
+  /* position: absolute; */
+  padding-top: 5%;
 }
 
 .just-head {
@@ -519,6 +517,12 @@ ul {
     width: 200px;
   }
 }
+
+/* @media (max-width: 62.5em) {
+  .cons {
+    padding-top: 0%;
+  }
+} */
 
 @media (max-width: 48em) {
   .icon-bar {
