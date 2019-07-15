@@ -432,7 +432,8 @@ ul {
 .card {
   transition: transform ease 0.2s;
   max-width: 22rem;
-  max-height: 22rem;
+  max-height: 20rem;
+  font-size: 16px;
 }
 
 .card:hover {
