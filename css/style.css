@@ -102,7 +102,7 @@ ul {
   margin-top: -15px;
   margin-left: 130px;
 }
-.typing {
+/* .typing {
   position: relative;
 }
 
@@ -113,7 +113,7 @@ ul {
   width: 1px;
   height: 90%;
   border-right: 2px solid #9585a0;
-}
+} */
 
 .navbrdr .active:after {
   background: none repeat scroll 0 0 transparent;
@@ -177,7 +177,7 @@ ul {
 .icon-bar {
   position: fixed;
   width: 40px;
-  left: 40px;
+  left: 20px;
   bottom: 0px;
 }
 
@@ -342,6 +342,7 @@ ul {
 }
 
 .to-top {
+  display: none;
   position: fixed;
   bottom: 40px;
   right: 20px;
@@ -496,6 +497,11 @@ ul {
   color: hsl(0, 0%, 41%);
 }
 
+.cs61b:hover {
+  text-decoration: none;
+  color: #9585a0;
+}
+
 .card-subtitle {
   /* font-family: "Karla", sans-serif; */
   font-size: 14px;
@@ -517,6 +523,7 @@ ul {
 
 .projs {
   padding-top: 7%;
+  /* padding-bottom: 20px; */
 }
 
 .spinner-grow {

@@ -21,17 +21,17 @@
 //   });
 // });
 //javascript
-const texts = "Hi! My name is Vishal Ambavaram ";
-let letter = "";
-let typeWriteIndex = 0;
-(function type() {
-  if (typeWriteIndex === texts.length) {
-    $(".typing::after").css("content", "none");
-  }
-  letter = texts.slice(0, ++typeWriteIndex);
-  document.querySelector(".typing").textContent = letter;
-  setTimeout(type, 150);
-})();
+// const texts = "Hi! My name is Vishal Ambavaram ";
+// let letter = "";
+// let typeWriteIndex = 0;
+// (function type() {
+//   if (typeWriteIndex === texts.length) {
+//     $(".typing::after").css("content", "none");
+//   }
+//   letter = texts.slice(0, ++typeWriteIndex);
+//   document.querySelector(".typing").textContent = letter;
+//   setTimeout(type, 150);
+// })();
 
 // var offset = 300;
 
