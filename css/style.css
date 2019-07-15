@@ -472,16 +472,6 @@ ul {
   font-size: 14px;
 }
 
-.second-deck {
-  position: relative;
-  bottom: -10px;
-}
-
-.first-card {
-  position: relative;
-  left: 20px;
-}
-
 .cons {
   padding-top: 21%;
 }
