@@ -136,7 +136,7 @@ ul {
 .icon-bar {
   position: fixed;
   width: 40px;
-  left: 20px;
+  left: 25px;
   bottom: 0px;
 }
 
@@ -471,17 +471,18 @@ ul {
 }
 
 .intro {
-  padding-top: 20%;
+  padding-top: 24%;
+  padding-bottom: 150px;
 }
 
 .cons {
-  padding-top: 16.5%;
+  padding-top: 22%;
   padding-bottom: 14%;
 }
 
 .projs {
   /* position: absolute; */
-  padding-top: 5%;
+  padding-top: 7%;
 }
 
 .just-head {
@@ -507,6 +508,10 @@ ul {
   margin-left: 20px;
 }
 
+.smaller-mobile {
+  font-size: 20px;
+}
+
 .spinner-grow {
   color: #9585a0 !important;
 }
@@ -522,6 +527,54 @@ ul {
     width: 200px;
   }
 }
+
+@media (max-width: 62.5em) {
+  .intro {
+    padding-top: 38%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .cons {
+    padding-top: 30%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .projs {
+    padding-top: 14%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .social-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 58em) {
+  .icon-bar {
+    left: -15px;
+  }
+}
+
+@media (max-width: 52em) {
+  .icon-bar {
+    left: -18px;
+  }
+}
+
+@media (max-width: 51em) {
+  .icon-bar {
+    left: -20px;
+  }
+}
+
+/* @media (max-width: 50em) {
+  .icon-bar {
+    left: 20px;
+  }
+} */
 /* 
 @media (max-width: 48em) {
   .body {
@@ -538,12 +591,6 @@ ul {
 @media (max-width: 48em) {
   .icon-bar {
     display: none;
-  }
-}
-
-@media (max-width: 48em) {
-  .social-mobile {
-    display: block;
   }
 }
 
@@ -572,8 +619,33 @@ ul {
 }
 
 @media (max-width: 48em) {
+  .intro {
+    padding-top: 49%;
+  }
+}
+
+@media (max-width: 48em) {
+  .cons {
+    padding-top: 41%;
+    padding-bottom: 30%;
+  }
+}
+
+@media (max-width: 48em) {
+  .projs {
+    padding-top: 14%;
+  }
+}
+
+@media (max-width: 48em) {
   .smaller-mobile {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 30em) {
+  .smaller-mobile {
+    font-size: 13.7px;
   }
 }
 
@@ -584,14 +656,82 @@ ul {
 }
 
 @media (max-width: 30em) {
+  .just-head {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 30em) {
+  .job {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 30em) {
+  .date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 30em) {
+  .card {
+    max-width: 18rem;
+  }
+}
+
+/* @media (max-width: 30em) {
+  .card {
+    padding-left: 13%;
+  }
+} */
+
+@media (max-width: 30em) {
+  .card {
+    max-height: 18rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .intro {
+    padding-top: 75%;
+    padding-bottom: 20%;
+  }
+}
+
+@media (max-width: 30em) {
+  .projs {
+    padding-top: 31%;
+  }
+}
+
+@media (max-width: 30em) {
+  .cons {
+    padding-top: 67%;
+    padding-bottom: 30%;
+  }
+}
+
+@media (max-width: 30em) {
   .job-desc-item {
     font-size: 15px;
   }
 }
 
 @media (max-width: 30em) {
+  .card-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 30em) {
   .typing {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 30em) {
+  .bear {
+    display: none;
   }
 }
 /* @media (max-width: 48em) {
