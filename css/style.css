@@ -475,7 +475,6 @@ ul {
 }
 
 .cons {
-  position: relative;
   padding-top: 16.5%;
   padding-bottom: 14%;
 }
@@ -523,6 +522,12 @@ ul {
     width: 200px;
   }
 }
+/* 
+@media (max-width: 48em) {
+  .body {
+    font-size: 10px;
+  }
+} */
 
 /* @media (max-width: 62.5em) {
   .cons {
@@ -548,6 +553,47 @@ ul {
   }
 }
 
+@media (max-width: 48em) {
+  .list-group-item {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 48em) {
+  .job-desc-item {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 48em) {
+  .typing {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 48em) {
+  .smaller-mobile {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 30em) {
+  .list-group-item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 30em) {
+  .job-desc-item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 30em) {
+  .typing {
+    font-size: 28px;
+  }
+}
 /* @media (max-width: 48em) {
   .nav-link:hover:after {
     width: 0%;
