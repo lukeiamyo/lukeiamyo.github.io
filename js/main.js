@@ -1,46 +1,31 @@
 //jquery
-// $(function() {
-//   console.log("ready");
+$(document).ready(function() {
+  $(".night-day").click(function() {
+    $("body").toggleClass("dark");
+    $(".name").toggleClass("dark");
+    $(".foot").toggleClass("dark");
+    $(".icon").toggleClass("dark");
+    $(".nav-link").toggleClass("dark");
+    $(".navbar").toggleClass("dark");
+    $(".to-top").toggleClass("dark");
+    $(".card-title").toggleClass("dark");
+    $(".resume:after").toggleClass("dark");
+    $(".card").toggleClass("dark");
+    $(".major").toggleClass("dark");
+    $(".list-group-mine .list-group-item").toggleClass("dark");
+    $(".list-group-mine .list-group-item:hover").toggleClass("dark");
+    $(".list-group-mine .list-group-item:active").toggleClass("dark");
+    $(".list-bar").toggleClass("please");
+    $(".just-head-two").toggleClass("please");
+    $(".rrr").toggleClass("please");
+    $(".nav-link-two").toggleClass("please");
+    $(".navbrdr-two").toggleClass("please");
+    $(".night-day").toggleClass("fa-sun-o fa-moon-o");
+    $(".lock-two").toggleClass("please");
+  });
+});
 
-//   $(".list-group li").click(function(e) {
-//     e.preventDefault();
-
-//     $that = $(this);
-
-//     $(".list-group")
-//       .find("li")
-//       .removeClass("active");
-//     $that.addClass("active");
-//   });
-// });
-// jQuery(document).ready(function($) {
-//   $(window).load(function() {
-//     $(".spinner-grow").fadeOut("slow", function() {
-//       $(this).remove();
-//     });
-//   });
-// });
 //javascript
-// const texts = "Hi! My name is Vishal Ambavaram ";
-// let letter = "";
-// let typeWriteIndex = 0;
-// (function type() {
-//   if (typeWriteIndex === texts.length) {
-//     $(".typing::after").css("content", "none");
-//   }
-//   letter = texts.slice(0, ++typeWriteIndex);
-//   document.querySelector(".typing").textContent = letter;
-//   setTimeout(type, 150);
-// })();
-
-// var offset = 300;
-
-// $(".navbar .collapse ul li a").click(function(event) {
-//   event.preventDefault();
-//   $($(this).attr("href"))[0].scrollIntoView();
-//   scrollBy(0, -offset);
-// });
-
 window.onscroll = function() {
   scrollFunction();
 };
