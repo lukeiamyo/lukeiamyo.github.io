@@ -220,11 +220,10 @@ ul {
   height: 2px;
   left: 0%;
   position: relative;
-  background: hsl(224, 14%, 15%);
+  background: #9585a0;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%;
 }
-
 .lattice {
   color: #9585a0;
   font-weight: 700;
@@ -287,6 +286,18 @@ ul {
   width: 1px;
   height: 110px;
   background-color: hsl(230, 8%, 24%);
+  position: relative;
+  top: 28px;
+  bottom: 0px;
+  left: 17px;
+}
+
+.resume-two-bar.please::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 110px;
+  background-color: hsl(220, 14%, 71%);
   position: relative;
   top: 28px;
   bottom: 0px;
@@ -374,7 +385,7 @@ ul {
   height: 2px;
   left: 50%;
   position: relative;
-  background: hsl(224, 14%, 15%);
+  background: #9585a0;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -415,7 +426,15 @@ ul {
   width: 0;
 }
 
-.rr:hover:after {
+.p-foot.dark {
+  color: hsl(220, 14%, 71%);
+}
+
+.cs61b.dark {
+  color: hsl(220, 14%, 71%);
+}
+
+.car .rr:hover:after {
   width: 100%;
   left: 0;
 }
@@ -576,6 +595,10 @@ ul {
   color: hsl(0, 0%, 33%);
 }
 
+.date.dark {
+  color: hsl(220, 5%, 51%);
+}
+
 .tab-pane ul li::before {
   content: ">";
   position: absolute;
@@ -592,6 +615,10 @@ ul {
   border: none;
   font-size: 12px;
   color: hsl(0, 0%, 41%);
+}
+
+.card-footer.dark {
+  color: hsl(220, 14%, 71%);
 }
 
 .card {
@@ -646,7 +673,7 @@ ul {
 }
 
 .intro {
-  padding-top: 24%;
+  padding-top: 25%;
   padding-bottom: 150px;
 }
 
@@ -720,6 +747,18 @@ ul {
   }
 }
 
+@media (max-width: 1200px) {
+  .intro {
+    padding-top: 29%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projs {
+    padding-top: 12%;
+  }
+}
+
 @media (max-width: 62.5em) {
   .just-head::after {
     width: 200px;
@@ -734,7 +773,7 @@ ul {
 
 @media (max-width: 62.5em) {
   .intro {
-    padding-top: 38%;
+    padding-top: 39%;
   }
 }
 
@@ -746,11 +785,11 @@ ul {
 
 @media (max-width: 62.5em) {
   .projs {
-    padding-top: 14%;
+    padding-top: 23%;
   }
 }
 
-@media (max-width: 62.5em) {
+@media (max-width: 48em) {
   .social-mobile {
     display: block;
   }
@@ -824,7 +863,7 @@ ul {
 
 @media (max-width: 48em) {
   .intro {
-    padding-top: 49%;
+    padding-top: 50%;
   }
 }
 

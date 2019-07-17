@@ -22,6 +22,11 @@ $(document).ready(function() {
     $(".navbrdr-two").toggleClass("please");
     $(".night-day").toggleClass("fa-sun-o fa-moon-o");
     $(".lock-two").toggleClass("please");
+    $(".date").toggleClass("dark");
+    $(".p-foot").toggleClass("dark");
+    $(".cs61b").toggleClass("dark");
+    $(".card-footer").toggleClass("dark");
+    $(".resume-two-bar").toggleClass("please");
   });
 });
 
