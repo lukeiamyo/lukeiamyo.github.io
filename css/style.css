@@ -243,6 +243,13 @@ ul {
   /* Berkeley Blue (go bears !)*/
   color: #003262;
   font-weight: 700;
+  line-height: 1.8em;
+}
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+  opacity: 1;
 }
 
 .college {
@@ -673,12 +680,12 @@ ul {
 }
 
 .intro {
-  padding-top: 25%;
+  padding-top: 28%;
   padding-bottom: 150px;
 }
 
 .cons {
-  padding-top: 22%;
+  padding-top: 18%;
   padding-bottom: 14%;
 }
 

@@ -4,7 +4,8 @@
     <head>
       <!-- Required meta tags -->
       <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 height=device-height">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
       <title>Vishal Ambavaram</title>
       <!-- https://fontawesome.com/license -->
@@ -15,6 +16,8 @@
         href="https://fonts.googleapis.com/css?family=Inconsolata|Karla&display=swap"
         rel="stylesheet"
       />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
       <!-- Bootstrap CSS -->
       <link
         rel="stylesheet"
@@ -54,7 +57,7 @@
               <a class="nav-link" href="#interests">Interests</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link  rr rrr" href="VishalAmbavaramResume.pdf" target="_blank">Resume</a>
+              <a class="nav-link  rr rrr" href="vishalAmbavaramResume.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -82,7 +85,7 @@
             </a>
           </li>
           <li class="icon-bar-list-item social">
-            <a class="icon" href="VishalAmbavaramResume.pdf" target="_blank">
+            <a class="icon" href="vishalAmbavaramResume.pdf" target="_blank">
               <i class="fa fa-file-text fa-sm icon-item" aria-hidden="true"></i>
             </a>
           </li>
@@ -117,13 +120,13 @@
             <h2 class="name typing">
               Hi! My name is Vishal
             </h2>
-            <p class="text text-justify">
+            <p class="text text-justify ">
               <h5 class="about-jobs smaller-mobile">Software Engineering Intern @
                   <span class="lattice">Lattice Automation</span> </h5>
-              <h5 class="about-jobs smaller-mobile">Research Assistant @ <span class="mofrad">Mofrad Lab</span></h5>
-              <h5 class="about-jobs smaller-mobile">CS61B Mentor (Data Structures) @ <span class="csm">CSM</span></h5>
+              <!-- <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">Research Assistant @ <span class="mofrad">Mofrad Lab</span></h5>
+              <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">CS61B Mentor (Data Structures) @ <span class="csm">CSM</span></h5> -->
               <h5 class="about-jobs about-school smaller-mobile">I'm a junior studying <span class="major">Data Science</span> with a domain emphasis
-              in <span class="major">Computational Biology</span> at
+              in <span class="major ">Computational Biology</span> at
               <span class="college">UC Berkeley</span>. <span class="bear"> Go bears! ʕ·ᴥ·ʔ</span></h5>
             </p>
           </div>
@@ -196,7 +199,7 @@
               <div class="col-6">
                 <div class="tab-content" id="nav-tabContent">
                   <div
-                    class="tab-pane fade show active"
+                    class="tab-pane show active"
                     id="list-lattice"
                     role="tabpanel"
                     aria-labelledby="list-lattice-list"
@@ -207,42 +210,25 @@
                     <h6 class="date">Jun - Aug 2019</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Building synthetic biology design and automation
-                        microservices using <span class="techs">Python</span>, <span class="techs">AWS Lambda</span> and 
-                        <span class="techs">Serverless</span> framework. (Parser, Aligner, Annotator,
-                        Primer Design)
+                        Built reusable synthetic biology design and automation
+                        microservices using <span class="techs">Python</span>, 
+                        <span class="techs">AWS Lambda</span> and 
+                        <span class="techs">Serverless</span> framework.
+                      </li>
+                      <li class="job-desc-item">
+                        Integrated microservices into several of Lattice Automation’s tools: 
+                        <span class="techs">synbio</span> library, an assembly automation tool, and
+                        <span class="techs">Loom</span>, a software suite for synthetic biologists.
+                      </li>
+                      <li class="job-desc-item"> 
+                        Developed a standalone front-end interface for the Gibson Assembly 
+                        using <span class="techs">React</span>.
                       </li>
                     </ul>
                   </div>
+
                   <div
-                    class="tab-pane fade"
-                    id="list-nifty"
-                    role="tabpanel"
-                    aria-labelledby="list-nifty-list"
-                  >
-                    <h4 class="job">
-                      SWE Intern <span class="place">@ Nifty</span>
-                    </h4>
-                    <h6 class="date">Jan - May 2019</h6>
-                    <ul class="job-desc">
-                      <li class="job-desc-item">
-                        Built a live-demo ready web platform using <span class="techs">React</span>  and
-                        <span class="techs">MDBootstrap</span> for React.
-                      </li>
-                      <li class="job-desc-item">
-                        Created and populated <span class="techs">Firebase</span> collections with
-                        test-data and configured to them to work with web
-                        platform. (User Authentication, getter, setter methods).
-                      </li>
-                      <li class="job-desc-item">
-                        Used <span class="techs">Scrum</span> to develop product. Engaged
-                        in weekly sprints to ensure efficient software
-                        development.
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="tab-pane fade"
+                    class="tab-pane"
                     id="list-mofrad"
                     role="tabpanel"
                     aria-labelledby="list-mofrad-list"
@@ -253,20 +239,46 @@
                     <h6 class="date">Jan - May 2019</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Building data infrastructure and analysis pipelines to
-                        scrape, clean and analyze human gut microbiota based on
-                        Metagenomics data.
+                          Built a computational data analysis pipeline to assemble, 
+                          annotate and analyze raw human gut metagenomics data.
                       </li>
                       <li class="job-desc-item">
-                        Went through rigorous literature reviews to familiarize
-                        myself with the numerous possible analytics pipelines
-                        that we could use while noting the pros and cons of
-                        different methodologies.
+                          Integrated <span class="techs">Trimmomatic</span>, 
+                          <span class="techs">Burrows-Wheeler Aligner</span> and 
+                          <span class="techs">SAMtools</span> into the pipeline to 
+                          pre-process input paired ends for a metabolic composition 
+                          simulation using <span class="techs">Python</span>.
                       </li>
                     </ul>
                   </div>
+
                   <div
-                    class="tab-pane fade"
+                    class="tab-pane"
+                    id="list-nifty"
+                    role="tabpanel"
+                    aria-labelledby="list-nifty-list"
+                  >
+                    <h4 class="job">
+                      SWE Intern <span class="place">@ Nifty</span>
+                    </h4>
+                    <h6 class="date">Jan - May 2019</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                          Created a live-demo ready web platform using <span class="techs">React</span>. 
+                          Populated demo store databases using web-scraped data and connected them to 
+                          the web platform using <span class="techs">Cloud Firestore</span>. Configured 
+                          user authentication using <span class="techs">Firebase</span>.
+                      </li>
+                      <li class="job-desc-item">
+                        Used <span class="techs">Scrum</span> to develop product. Engaged
+                        in weekly sprints to ensure efficient software
+                        development.
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div
+                    class="tab-pane"
                     id="list-csm"
                     role="tabpanel"
                     aria-labelledby="list-csm-list"
@@ -279,7 +291,7 @@
                     <ul class="job-desc">
                       <li class="job-desc-item">
                         Responsible for teaching an auxiliary weekly section of
-                        students concepts such as Java programming, data
+                        students concepts such as <span class="techs">Java</span> programming, data
                         structures, run-time analysis, sorting and shortest path
                         algorithms from CS61B - Data Structures and Algorithms.
                       </li>
@@ -290,7 +302,7 @@
                     </ul>
                   </div>
                   <div
-                    class="tab-pane fade"
+                    class="tab-pane"
                     id="list-ulab"
                     role="tabpanel"
                     aria-labelledby="list-ulab-list"
@@ -302,11 +314,11 @@
                     <ul class="job-desc">
                       <li class="job-desc-item">
                         Developed the website for the Physics and Astronomy
-                        Branch using HTML/CSS, Javascript and Flask.
+                        Branch using <span class="techs">HTML/CSS</span>, <span class="techs">Javascript</span> and <span class="techs">Flask</span>.
                       </li>
                       <li class="job-desc-item">
-                        Integrated online python training modules, developed
-                        using Jupyter notebooks, into the website.
+                        Integrated online <span class="techs">Python</span> training modules, developed
+                        using <span class="techs">Jupyter</span> notebooks, into the website.
                       </li>
                     </ul>
                   </div>
@@ -463,7 +475,6 @@
       ></script>
       <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
       <script src="https://use.fontawesome.com/b765d6eec0.js"></script>
-      <script src="js/scramble.js"></script>
       <script src="js/main.js"></script>
     </body>
   </html>
