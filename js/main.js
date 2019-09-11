@@ -33,6 +33,7 @@ $(document).ready(function() {
 //javascript
 window.onscroll = function() {
   scrollFunction();
+  toggleDisappearFunction();
 };
 
 function scrollFunction() {
@@ -46,4 +47,15 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function toggleDisappearFunction() {
+  if (
+    document.body.scrollTop > 160 ||
+    document.documentElement.scrollTop > 160
+  ) {
+    document.getElementById("lock-lock").style.display = "none";
+  } else {
+    document.getElementById("lock-lock").style.display = "block";
+  }
 }
