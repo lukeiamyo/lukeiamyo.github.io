@@ -452,7 +452,7 @@ ul {
   text-align: center;
   height: auto;
   min-height: 70px;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .desktop-foot {
@@ -769,6 +769,12 @@ ul {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+.copyright {
+  font-size: 13px;
+  font-family: "Karla", sans-serif;
+  margin-top: 20px;
 }
 
 @keyframes shake {
