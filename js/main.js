@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 //javascript
 window.onscroll = function() {
-  scrollFunction();
+  // scrollFunction();
   toggleDisappearFunction();
 };
 
