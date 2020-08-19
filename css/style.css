@@ -114,6 +114,52 @@ body.dark {
   width: 3px;
 }
 
+#menu ul{
+  list-style: none;
+  margin-left: -40px;
+}
+
+#menu li{
+  display: inline;
+}
+
+.menu-item-line {
+  font-weight: 100
+}
+
+.menu-item {
+  color: gray
+}
+
+a.list-resume:hover {
+  outline: none;
+  text-decoration: none;
+  color: #78A386;
+}
+
+a.list-linkedin:hover {
+  outline: none;
+  text-decoration: none;
+  color: rgb(106, 141, 202);
+}
+
+a.list-github:hover {
+  outline: none;
+  text-decoration: none;
+  color: #52535c;
+}
+
+a.list-email:hover {
+  outline: none;
+  text-decoration: none;
+  color: #c57979;
+}
+
+#24292e
+/* #menu li:after{
+  
+} */
+
 /* .list-group-item:after.dark {
   background: hsl(224, 14%, 15%);
 } */
@@ -214,24 +260,34 @@ ul {
 }
 .lattice {
   color: #9585a0;
-  font-weight: 700;
+  /* background-color: #f2edf5; */
 }
 
-.mofrad {
-  color: hsl(221, 55%, 67%);
-  font-weight: 700;
+a {
+  text-decoration: none;
+  outline: none;
 }
 
-.csm {
-  color: hsl(119, 39%, 58%);
-  font-weight: 700;
+a.lattice:hover {
+  outline: none;
+  text-decoration: none;
+  color: gray;
+}
+
+a.major:hover {
+  outline: none;
+  text-decoration: none;
+  color: gray;
+}
+
+a.college:hover {
+  outline: none;
+  text-decoration: none;
+  color: gray;
 }
 
 .major {
-  /* Berkeley Blue (go bears !)*/
-  color: #003262;
-  font-weight: 700;
-  line-height: 1.8em;
+  color: #92a6b8;
 }
 
 .fade {
@@ -241,9 +297,7 @@ ul {
 }
 
 .college {
-  /* California Gold (go bears !)*/
-  color: #fdb515;
-  font-weight: 700;
+  color: #e9ca86;
 }
 
 .about-jobs {
@@ -270,7 +324,7 @@ ul {
 
 .icon-bar-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   -webkit-box-align: center;
   align-items: center;
 }
