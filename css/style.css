@@ -13,18 +13,10 @@ body {
   background-color: hsl(230, 1%, 98%);
 }
 
-.night-day {
-  color: #ff7e5f; /* fallback for old browsers */
-  color: -webkit-linear-gradient(
-    to right,
-    #feb47b,
-    #ff7e5f
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  color: linear-gradient(
-    to right,
-    #feb47b,
-    #ff7e5f
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.navbar-brand {
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  margin-left: 80px;
 }
 
 .list-bar.please:after {
@@ -55,12 +47,12 @@ body {
   width: 3px;
 }
 
-#menu ul{
+#menu-imp ul{
   list-style: none;
   margin-left: -40px;
 }
 
-#menu li{
+#menu-imp li{
   display: inline;
 }
 
@@ -165,7 +157,7 @@ ul {
   border-right: 2px solid #9585a0;
 } */
 
-.navbrdr .active:after {
+/* .navbrdr .active:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -189,7 +181,8 @@ ul {
   background: #9585a0;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%;
-}
+} */
+
 .lattice {
   color: #9585a0;
   /* background-color: #f2edf5; */
@@ -219,7 +212,7 @@ a.college:hover {
 }
 
 .major {
-  color: #92a6b8;
+  color: #5e88ad;
 }
 
 .fade {
@@ -299,6 +292,21 @@ a.college:hover {
   vertical-align: middle;
 }
 
+.rr:hover {
+  color: #78A386 !important;
+  outline: none;
+  text-decoration: none;
+}
+
+.rr {
+  font-family: "Karla", sans-serif; 
+  color: #333333;
+  padding-left: 8%;
+  padding-right: 2%;
+}
+
+
+
 /* .icon-bar-list-item:last-of-type {
   margin-bottom: 5px;
 } */
@@ -322,8 +330,18 @@ a.college:hover {
 }
 
 .nav-link {
-  /* color: hsl(230, 1%, 98%); */
-  color: hsl(230, 8%, 24%) !important;
+  font-family: "Karla", sans-serif;
+  color: #333333 !important;
+}
+
+a.nav-link.active {
+  color: #cab4da !important;
+  font-weight: 800 !important;
+}
+
+.nav-link:hover {
+  color: #856f94 !important;
+  font-weight: 800 !important;
 }
 
 .techs {
@@ -333,88 +351,6 @@ a.college:hover {
 .nav-link:hover {
   /* color: hsl(230, 1%, 98%); */
   color: hsl(230, 8%, 24%);
-}
-
-.rr {
-  color: #9585a0 !important;
-  font-weight: 900;
-}
-
-.rrr.please {
-  color: #9585a0 !important;
-  font-weight: 900;
-}
-
-.nav-link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: relative;
-  background: rgb(136, 146, 176);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.nav-link-two.please:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: relative;
-  background: #9585a0;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.nav-link:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-.nav-link-two.please:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-.rr:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: relative;
-  background: hsl(230, 8%, 24%);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.rrr.please:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: relative;
-  background: hsl(220, 14%, 71%);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.car .rr:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-.rrr.please:hover:after {
-  width: 100%;
-  left: 0;
 }
 
 /* Footer */
@@ -698,84 +634,4 @@ a.college:hover {
   margin-left: 20px;
 }
 
-.smaller-mobile {
-  font-size: 20px;
-}
-
-.spinner-grow {
-  color: #9585a0 !important;
-}
-
-.lock:hover .icon-unlock:before {
-  color: #ffb347; /* fallback for old browsers */
-  color: -webkit-linear-gradient(
-    to right,
-    #ffcc33,
-    #ffb347
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  color: linear-gradient(
-    to right,
-    #ffcc33,
-    #ffb347
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.lock-two.please:hover .icon-unlock-two:before {
-  color: #00c6ff; /* fallback for old browsers */
-  color: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  color: linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.locks:hover {
-  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-
-.copyright {
-  font-size: 13px;
-  font-family: "Karla", sans-serif;
-  margin-top: 20px;
-}
-
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(1px, 0, 0);
-  }
-}
-
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
 
