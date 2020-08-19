@@ -123,14 +123,13 @@
               Hi! My name is Vishal
             </h2>
             <p class="text text-justify ">
-              <h5 class="about-jobs smaller-mobile animated fadeIn">Software Engineering Intern @
-                  <span class="lattice">Lattice Automation</span></h5>
+              <h5 class="about-jobs smaller-mobile animated fadeIn">Former Software Engineering Intern @
+                  <span class="lattice">Zymergen</span></h5>
               <!-- <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">Research Assistant @ <span class="mofrad">Mofrad Lab</span></h5>
               <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">CS61B Mentor (Data Structures) @ <span class="csm">CSM</span></h5> -->
-              <h5 class="about-jobs about-school smaller-mobile animated fadeIn">I'm a junior studying <span class="major">Data Science</span> with a domain emphasis
-              in <span class="major ">Computational Biology</span> at
+              <h5 class="about-jobs about-school smaller-mobile animated fadeIn">I'm a senior studying <span class="major">Data Science</span> at
               <span class="college">UC Berkeley</span>. <span class="bear"> Go bears! ʕ·ᴥ·ʔ</span></h5>
-              <h5 class="about-jobs about-school smaller-mobile animated fadeIn"><br>Seeking internship opportunites for Summer '20.</h5>
+              <h5 class="about-jobs about-school smaller-mobile animated fadeIn"><br>Seeking full-time software engineering opportunites</h5>
 
             </p>
           </div>
@@ -155,6 +154,15 @@
                 >
                   <a
                     class="list-group-item list-group-item-action active list-bar"
+                    id="list-zymergen-list"
+                    data-toggle="list"
+                    href="#list-zymergen"
+                    role="tab"
+                    aria-controls="zymergen"
+                    >Zymergen
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action list-bar"
                     id="list-lattice-list"
                     data-toggle="list"
                     href="#list-lattice"
@@ -202,8 +210,35 @@
               </div>
               <div class="col-6">
                 <div class="tab-content" id="nav-tabContent">
-                  <div
+                    <div
                     class="tab-pane show active"
+                    id="list-zymergen"
+                    role="tabpanel"
+                    aria-labelledby="list-zymergen-list"
+                  >
+                    <h4 class="job">
+                      SWE Intern (Data Platforms) <span class="place">@ Zymergen</span>
+                    </h4>
+                    <h6 class="date">May - Aug 2020</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Set up data validation infrastructure (CLI) using <span class="techs"> Great Expectations</span>, 
+                        <span class="techs">AWS S3</span> and 
+                        <span class="techs">Docker</span> in <span class="techs">Python</span>.
+                      </li>
+                      <li class="job-desc-item">
+                        Built an <span class="techs">Airflow</span> task operator that executes CLI commands via a Docker image. Also wrote Slack and
+                        Email templates using <span class="techs">Jinja</span> for Airflow notification tasks. 
+                      </li>
+                      <li class="job-desc-item"> 
+                        Created a workflow validating key <span class="techs">mySQL</span> tables and integrated a validation step into an 
+                        existing ETL data pipeline in Airflow (validated against custom tailored sets of encoded rules).
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="tab-pane"
                     id="list-lattice"
                     role="tabpanel"
                     aria-labelledby="list-lattice-list"
