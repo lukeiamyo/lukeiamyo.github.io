@@ -335,7 +335,7 @@ a.college:hover {
 }
 
 a.nav-link.active {
-  color: #cab4da !important;
+  color: #856f94 !important;
   font-weight: 800 !important;
 }
 
@@ -496,6 +496,17 @@ a.nav-link.active {
   font-family: "Karla", sans-serif;
 }
 
+.me-img {
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding-right: 10%;
+  margin-top: 50px;
+}
+
 .place {
   color: #9585a0;
 }
@@ -581,6 +592,10 @@ a.nav-link.active {
 .cons {
   padding-top: 18%;
   padding-bottom: 14%;
+}
+
+.cons-about {
+  padding-top: 10%;
 }
 
 .projs {
