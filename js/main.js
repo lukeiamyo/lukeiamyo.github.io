@@ -42,14 +42,9 @@ document.onreadystatechange = function() {
   }
 };
 
-
-history.replaceState(null, null, ' ');
-
-
-
-// $(document).ready(function () {
-//   $('a').on("click",function(e){
-//     var url = window.location.toString();
-//     url = url.split("#")[0];
+// $(document).ready(function() {
+//   $(window).scroll(function() {
+//     $("#fade").css("opacity", 1 - $(window).scrollTop() / ($('#fade').height()));
 //   });
-// })
+// });
+

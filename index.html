@@ -16,10 +16,12 @@
         href="https://fonts.googleapis.com/css?family=Inconsolata|Karla&display=swap"
         rel="stylesheet"
       />
+
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
       />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
       <!-- Bootstrap CSS -->
       <link
@@ -70,8 +72,9 @@
       <div class="container intro">
         <div class="row">
           <div class="col">
-            <div class="animate__animated animate__fadeInUp">
-            <h2 class="name animate__animated animate__fadeIn">
+            <!-- <div class="animate__animated animate__fadeInUp"> -->
+              <div data-aos="fade-up" data-aos-a>
+            <h2 class="name">
               Hi! My name is Vishal
             </h2>
            
@@ -105,6 +108,9 @@
                 </div>
               </div>
           </div>
+          <div class="col">
+            <img class="bear" src="Annasucks.svg" alt="" height=""
+          </div>
           </div>
         </div>
       </div>
@@ -114,7 +120,7 @@
       <div id="about-me">
           <div class="container cons-about">
             <div class="row">
-              <div class="col">
+              <div class="col" id="fade">
                   <h3 class="just-head just-head-two">
                       About Me
                     </h3>
@@ -481,6 +487,10 @@
       <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
       <script src="https://use.fontawesome.com/b765d6eec0.js"></script>
       <script src="js/main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     </body>
   </html>
 </html>

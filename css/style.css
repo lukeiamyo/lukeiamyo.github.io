@@ -18,6 +18,7 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+
 .list-bar.please:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -604,6 +605,10 @@ a.nav-link.active {
 
 .cons-about {
   padding-top: 10%;
+}
+
+.bear {
+  margin-top: -50px;
 }
 
 .projs {
