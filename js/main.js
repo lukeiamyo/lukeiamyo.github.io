@@ -72,3 +72,7 @@ document.onreadystatechange = function() {
     }, 1000);
   }
 };
+
+// document.onreadystatechange = function() {
+  
+// };
