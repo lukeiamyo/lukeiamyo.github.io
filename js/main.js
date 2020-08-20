@@ -48,3 +48,4 @@ document.onreadystatechange = function() {
 //   });
 // });
 
+$('img').on('dragstart', function(event) { event.preventDefault(); });
