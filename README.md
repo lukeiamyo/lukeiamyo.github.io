@@ -1,2 +1,2 @@
 # lukeiamyo.github.io
-Personal website created using HTML/CSS (Bootstrap) & a sprinkle of Javascript.
+Personal website created using HTML/CSS (Bootstrap) and hosted via GitHub.
