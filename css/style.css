@@ -107,12 +107,6 @@ a.list-github:hover {
   color: #52535c;
 }
 
-a.list-email:hover {
-  outline: none;
-  text-decoration: none;
-  color: #c57979;
-}
-
 *,
 ::before,
 ::after {
@@ -672,6 +666,11 @@ a.nav-link.active {
   font-family: "Karla", sans-serif;
 }
 
+.footer-email:hover {
+  cursor: pointer;
+  color: #e59191 !important;
+}
+
 .footer-loc {
   color: gray;
   font-size: 13px;
@@ -681,7 +680,7 @@ a.nav-link.active {
 .footer-social ul{
   list-style: none;
   margin-left: -48px;
-  padding-top: 8px;
+  padding-top: 14px;
 }
 
 .footer-social li{
@@ -718,7 +717,6 @@ a.nav-link.active {
   padding-left: 0px;
 }
 
-/* Footer */
 .foot {
   display: flex;
   -webkit-box-pack: center;
@@ -741,5 +739,3 @@ a.nav-link.active {
   text-align: right;
   margin-left: 40px;
 }
-
-

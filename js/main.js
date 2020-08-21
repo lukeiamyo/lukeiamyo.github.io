@@ -1,51 +1,35 @@
+$(document).ready(function() {
+    preventImgDrag();
+    disableHrefs();
+    copyEmail();
+});
 
-//javascript
-window.onscroll = function() {
-  // scrollFunction();
-  toggleDisappearFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("topButton").style.display = "block";
-  } else {
-    document.getElementById("topButton").style.display = "none";
-  }
+function preventImgDrag() {
+    $('img').on('dragstart', function(e) { 
+      e.preventDefault(); 
+    });
 }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+function disableHrefs() {
+    $(".nav-link, .down-about-icon").on("click", function (e) {
+      e.preventDefault();
+      $(window).scrollTop($($(this).attr('href')).offset().top);
+    });
 }
 
-function toggleDisappearFunction() {
-  if (
-    document.body.scrollTop > 160 ||
-    document.documentElement.scrollTop > 160
-  ) {
-    document.getElementById("lock-lock").style.display = "none";
-  } else {
-    document.getElementById("lock-lock").style.display = "block";
-  }
+function copyEmail() {
+    $('.footer-email').click(function () { 
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val("ambavar98@berkeley.edu").select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.footer-email').attr("aria-label", "Copied!");
+    });
 }
 
-document.onreadystatechange = function() {
-  var state = document.readyState;
-  if (state == "interactive") {
-    document.getElementById("contents").style.visibility = "hidden";
-  } else if (state == "complete") {
-    setTimeout(function() {
-      document.getElementById("interactive");
-      document.getElementById("load").style.visibility = "hidden";
-      document.getElementById("contents").style.visibility = "visible";
-    }, 1000);
-  }
-};
-
-// $(document).ready(function() {
-//   $(window).scroll(function() {
-//     $("#fade").css("opacity", 1 - $(window).scrollTop() / ($('#fade').height()));
-//   });
-// });
-
-$('img').on('dragstart', function(event) { event.preventDefault(); });
+function fadeUpOnScroll() {
+    $(window).scroll(function() {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / ($('#fade').height()));
+    });
+}
