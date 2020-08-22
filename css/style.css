@@ -1,3 +1,17 @@
+/* karla-regular - latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/karla-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Karla'), local('Karla-Regular'),
+      url('../fonts/karla-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/karla-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/karla-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+      url('../fonts/karla-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/karla-v13-latin-regular.svg#Karla') format('svg'); /* Legacy iOS */
+}
+
 html {
   scroll-behavior: smooth;
   font-family: 'scroll-behavior: smooth', /* user defined fonts */;
@@ -10,6 +24,10 @@ body {
   font-size: 18px;
   width: 100%;
   position: relative
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
 }
 
 html, body {
@@ -318,7 +336,6 @@ a.college:hover {
 
 .nav-link:hover {
   color: #856f94 !important;
-  font-weight: 800 !important;
 }
 
 .techs {
@@ -597,7 +614,7 @@ a.college:hover {
 
 .footer-head {
   font-family: "Karla", sans-serif;
-  font-weight: 700;
+  /* font-weight: 700; */
   padding-bottom: 20px;
 }
 
@@ -720,8 +737,13 @@ a.college:hover {
   .name {
     font-size: 26px;
     text-align: center;
+    font-weight: 400;
   }
 
+  .rr {
+    display: none;
+  }
+  
   .smaller-mobile {
     font-size: 18px;
     text-align: center;
@@ -734,6 +756,10 @@ a.college:hover {
   .smaller-mobile-links {
     font-size: 18px;
     text-align: center;
+  }
+
+  .just-head {
+    font-weight: 700;
   }
 
 
@@ -809,10 +835,10 @@ a.college:hover {
     left: 25px;
   }
 
-  .card {
+  .card-deck {
     /* display: flex;  */
     justify-content: center;
-    margin-left: 2px;
+    margin-left: 3px;
   }
 
   .btn-light {
