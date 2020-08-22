@@ -743,7 +743,7 @@ a.college:hover {
   .rr {
     display: none;
   }
-  
+
   .smaller-mobile {
     font-size: 18px;
     text-align: center;
@@ -844,7 +844,7 @@ a.college:hover {
   .btn-light {
     background-color: rgb(236, 238, 243);
     border-radius: 25px;
-    width: 20%;
+    /* width: 20%; */
     font-size: 16px;
     touch-action: manipulation;
     border: none;
@@ -872,10 +872,13 @@ a.college:hover {
   }
 
   .butts {
-    padding-top : 92%
+    margin-top: -20px;
+    margin-left: -125px;
+    padding-bottom: 30px;
   }
+
   .projs {
-    padding-top : 30%
+    padding-top : 400px;
   }
 }
 
