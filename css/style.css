@@ -437,9 +437,13 @@ a.college:hover {
 }
 
 .tab-content {
-  position: relative;
-  left: 30px;
+  position: absolute;
+  left: 50px;
   top: -1px;
+}
+
+.tab-abs {
+  position: absolute; 
 }
 
 .job {
@@ -453,8 +457,18 @@ a.college:hover {
   max-height: 300px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  padding-right: 10%;
+  margin-right: 10%;
+  /* padding-right: 10%; */
   /* margin-top: 50px; */
+  
+}
+
+.me-img:hover {
+  transform: translateY(-4px);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
 }
 
 .place {
@@ -722,6 +736,7 @@ a.college:hover {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    margin-right: 20px;
   }
 
   .just-head {
@@ -750,18 +765,44 @@ a.college:hover {
     font-size: 14px;
   }
 
-  .tab-pane {
-    /* margin-right: 300px; */
-  }
-
   .btn-group {
     display: block;
-    text-align: center;
-    margin-right: 20%;
+    text-align: right;
+    margin-right: 34%;
     margin-top: 12%;
+  }
+
+  .no-mas-button {
+    display: none;
+  }
+
+  .btn-light {
+    background-color: rgb(236, 238, 243);
+    width: 20%;
+    font-size: 16px;
+    touch-action: manipulation;
+  }
+
+  .btn-light:hover {
+    background-color: none !important;
+  }
+
+  .btn-light:active {
+    background-color: rgb(236, 238, 243) !important;
+  }
+
+  .btn-light:disabled {
+    background-color: rgb(236, 238, 243);
   }
 
   .job {
     font-size: 18px;
+  }
+
+  .butts {
+    padding-top : 92%
+  }
+  .projs {
+    padding-top : 30%
   }
 }
