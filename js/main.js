@@ -33,3 +33,49 @@ function fadeUpOnScroll() {
         $("#fade").css("opacity", 1 - $(window).scrollTop() / ($('#fade').height()));
     });
 }
+
+function nextWork() {
+    var currTab = document.getElementById('btn-active-work');
+    currTabNum = parseInt(currTab.innerHTML);
+    if (currTabNum != 6) {
+        removeActivePane();
+        appendToActivePane(currTabNum);
+        if (currTabNum == 5) {
+            document.getElementById('next-work').classList.add("disabled");
+        }
+        currTabNum++; 
+        if (currTabNum != 1) {
+            document.getElementById('prev-work').classList.remove("disabled");
+        }
+        currTab.innerHTML = currTabNum.toString();
+    }
+}
+
+function prevWork() {
+    var currTab = document.getElementById('btn-active-work');
+    currTabNum = parseInt(currTab.innerHTML);
+    if (currTabNum != 1) {
+        removeActivePane();
+        appendToActivePane(currTabNum - 2);
+        if (currTabNum == 2) {
+            document.getElementById('prev-work').classList.add("disabled");
+        }
+        currTabNum--; 
+        if (currTabNum != 6) {
+            document.getElementById('next-work').classList.remove("disabled");
+        }
+        currTab.innerHTML = currTabNum.toString();
+    }
+}
+
+function removeActivePane() {
+    var activePane = document.getElementsByClassName("tab-pane active")[0];
+    activePane.classList.remove("show");
+    activePane.classList.remove("active");
+}
+
+function appendToActivePane(curr) {
+    var tabs = document.getElementsByClassName("tab-pane");
+    tabs[curr].classList.add("show");
+    tabs[curr].classList.add("active");
+}

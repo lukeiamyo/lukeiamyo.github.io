@@ -454,7 +454,7 @@ a.college:hover {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   padding-right: 10%;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .place {
@@ -667,8 +667,101 @@ a.college:hover {
   margin-left: 40px;
 }
 
+.btn-group {
+  display: none;
+}
+
 @media (max-width: 576px) { 
+  /* ##### Front page ###### */ 
+  .bear {
+    margin-top: -20%;
+  }
+
+  .small-front {
+    margin-top: -90%;
+  }
+
+  .navbar {
+    margin-left: -20px; 
+  }
+
+  .name {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .smaller-mobile {
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+  #menu-imp {
+    margin-left: -20px;
+  }
+
+  .about-school {
+    font-size: 12px;
+    text-align: center;
+  }
+  
   .nav-item {
     display: none; 
+  }
+
+  .down-about {
+    margin-left: 43%;
+  }
+
+  /* ##### About ###### */ 
+  .small-about {
+    font-size: 16px;
+  }
+
+  .small-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .just-head {
+    font-size: 24px;
+  }
+
+  .just-head-ish::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 10%;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .foot {
+    margin-right: 45px;
+  }
+
+  .list-group {
+    display: none;
+  }
+
+  .job-desc {
+    font-size: 14px;
+  }
+
+  .tab-pane {
+    /* margin-right: 300px; */
+  }
+
+  .btn-group {
+    display: block;
+    text-align: center;
+    margin-right: 20%;
+    margin-top: 12%;
+  }
+
+  .job {
+    font-size: 18px;
   }
 }

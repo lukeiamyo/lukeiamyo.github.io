@@ -59,7 +59,7 @@
                 </nav>
                 <!-- Front -->
                 <div class="row align-items-center help" id="front-page">
-                    <div class="col-md-6 offset-sm-2 offset-md-0 animate__animated animate__fadeInUp">
+                    <div class="col-md-6 offset-sm-2 offset-md-0 small-front animate__animated animate__fadeInUp">
                         <h2 class="name">
                             Hi! My name is Vishal
                         </h2>
@@ -67,12 +67,12 @@
                         <h5 class="about-jobs smaller-mobile">Former Software Engineering Intern @
                             <a class="lattice" href="https://www.zymergen.com/" target="_blank">Zymergen</a>
                         </h5>
-                        <h5 class="about-jobs about-school smaller-mobile">Senior studying <span class="major">Data Science</a> at
+                        <h5 class="about-jobs smaller-mobile">Senior studying <span class="major">Data Science</a> at
                             <span class="college">UC Berkeley</span>.
                         </h5>
-                        <h5 class="about-jobs about-school smaller-mobile"><br>Seeking full-time software engineering opportunites</h5>
+                        <h5 class="about-jobs about-school"><br>Seeking full-time software engineering opportunites</h5>
                         </p>
-                        <div id="menu-imp">
+                        <div id="menu-imp" class="smaller-mobile">
                             <ul>
                                 <li class="menu-item"><a class="list-resume" href="VishalAmbavaramResume.pdf" target="_blank">Resume</a></li>
                                 <li class="menu-item-line">·</li>
@@ -105,7 +105,7 @@
                     </div>
                   </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-10 col-sm-8 col-md-6 order-last order-md-first small-about">
                         <p>
                             Hi, I'm Vishal! I was born in Jacksonville, FL, moved to Hyderabad, India at 
                             10 and currently reside in Newark, CA. <br><br>
@@ -118,19 +118,19 @@
                             waiting, eating and critiquing my sister's baking adventures. <br> <br>
                         </p>
                     </div>
-                    <div class="col">
+                    <div class="col small-img">
                         <img src="Vishalimg.png" class="float-right me-img rounded" alt="...">
                     </div>
                 </div>
                 <!-- Work -->
                 <div class="row cons-about" id="work">
                     <div class="col offset-lg-2 offset-md-1">
-                        <h3 class="just-head">
+                        <h3 class="just-head just-head-ish">
                             Work & Extracurriculars
                         </h3>
                         <div class="row">
                             
-                            <div class="col-2">
+                            <div class="col-0 col-sm-2">
                               
                                 <div
                                     class="list-group list-group-mine"
@@ -193,7 +193,7 @@
                                         >
                                 </div>
                             </div>
-                            <div class="col-7">
+                            <div class="col-9 col-sm-7">
                                 <div class="tab-content" id="nav-tabContent">
                                     <div
                                         class="tab-pane show active"
@@ -342,6 +342,11 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="btn-group" role="group" aria-label="workexp">
+                                        <button id="prev-work" type="button" class="bt-size btn btn-sm btn-outline-secondary disabled" onclick="prevWork()"><-</button>
+                                        <button id="next-work" type="button" class="bt-size btn btn-sm btn-outline-secondary" onclick="nextWork()">-></button>
+                                        <button type="button" class="bt-size btn btn-sm btn-light disabled"><span id="btn-active-work">1</span>/6</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -349,7 +354,7 @@
                 </div>
                 <!-- Projects -->
                 <div class="row projs" id="projects">
-                    <div class="col col-md-12 offset-lg-2">
+                    <div class="col-10 col-sm-11 col-md-12 offset-lg-2">
                         <h3 class="just-head" >Projects</h3>
                         <div class="card-deck">
                             <div class="card border-light mb-3" >
@@ -457,6 +462,7 @@
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            <script src="https://use.fontawesome.com/b765d6eec0.js"></script>
             <script src="js/main.js"></script>
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <!-- <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script> -->
