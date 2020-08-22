@@ -706,6 +706,10 @@ a.college:hover {
   display: none;
 }
 
+.yes-but {
+  display: none;
+}
+
 @media (max-width: 575.98px) { 
   /* ##### Front page ###### */ 
   * {
@@ -880,6 +884,7 @@ a.college:hover {
 
   .yes-but {
     font-size: 16px;
+    display: block;
   }
 
   .yes-but-two {
