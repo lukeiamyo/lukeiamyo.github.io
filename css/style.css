@@ -632,6 +632,10 @@ a.college:hover {
   transition: 0.8s;
 }
 
+.black-please {
+  color: black;
+}
+
 /* .foot-social:hover {
 
 } */
@@ -685,18 +689,32 @@ a.college:hover {
   display: none;
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 575.98px) { 
   /* ##### Front page ###### */ 
+  * {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+  } 
+  
   .bear {
-    margin-top: -20%;
-  }
-
-  .small-front {
-    margin-top: -90%;
+    margin-top: -80px;
   }
 
   .navbar {
     margin-left: -20px; 
+  }
+
+  .no-more {
+    /* position: relati; */
+    margin-top: -340px;
+    margin-left: 0px;
+    /* display:flex;  */
+    /* justify-content: center; */
+  }
+
+  .down-about-icon {
+    margin-left: 2px;
   }
 
   .name {
@@ -705,7 +723,16 @@ a.college:hover {
   }
 
   .smaller-mobile {
-    font-size: 15px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .not-on-sm {
+    display: none;
+  }
+
+  .smaller-mobile-links {
+    font-size: 18px;
     text-align: center;
   }
 
@@ -735,7 +762,8 @@ a.college:hover {
   .small-img {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
     margin-right: 20px;
   }
 
@@ -762,25 +790,38 @@ a.college:hover {
   }
 
   .job-desc {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .btn-group {
     display: block;
     text-align: right;
-    margin-right: 34%;
-    margin-top: 12%;
+    margin-right: 32%;
   }
 
   .no-mas-button {
     display: none;
   }
 
+  .tab-content {
+    /* margin-right: 70%; */
+    width: 100%;
+    left: 25px;
+  }
+
+  .card {
+    /* display: flex;  */
+    justify-content: center;
+    margin-left: 2px;
+  }
+
   .btn-light {
     background-color: rgb(236, 238, 243);
+    border-radius: 25px;
     width: 20%;
     font-size: 16px;
     touch-action: manipulation;
+    border: none;
   }
 
   .btn-light:hover {
@@ -791,12 +832,17 @@ a.college:hover {
     background-color: rgb(236, 238, 243) !important;
   }
 
-  .btn-light:disabled {
-    background-color: rgb(236, 238, 243);
+  .btn:disabled {
+    background-color: rgb(91, 92, 95) !important;
   }
 
   .job {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 900px;
+  }
+  
+  .date {
+    font-size: 13px;
   }
 
   .butts {
@@ -804,5 +850,168 @@ a.college:hover {
   }
   .projs {
     padding-top : 30%
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .name {
+    font-size: 26px;
+  }
+
+  .smaller-mobile {
+    font-size: 18px;
+  }
+
+  .smaller-mobile-links {
+    font-size: 18px;
+  }
+
+  .about-school {
+    font-size: 18px;
+  }
+
+  .small-about {
+    font-size: 17px;
+  }
+
+  .cons-about {
+    margin-left: 40px;
+  }
+
+  .projs {
+    margin-left: 40px;
+  }
+
+  .foot {
+    margin-left: 50px;
+  }
+
+  .job-desc {
+    font-size: 17px;
+  }
+
+  .list-group-item {
+    font-size: 17px;
+  }
+
+  .job {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .foot {
+    margin-left: 32px;
+  }
+
+  .name {
+    font-size: 26px;
+  }
+
+
+  .smaller-mobile {
+    font-size: 16px;
+  }
+
+
+  .smaller-mobile-links {
+    font-size: 16px;
+  }
+
+  .about-school {
+    font-size: 16px;
+  }
+
+  .down-about {
+    margin-left: 143px;
+  }
+
+  .small-about {
+    font-size: 16px;
+  }
+
+  .job-desc {
+    font-size: 15.7px;
+  }
+
+  .list-group-item {
+    font-size: 15.7px;
+  }
+
+  .job {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bear {
+    margin-top: -100px;
+  }
+
+  .down-about {
+    margin-left: -400px;
+  }
+  
+  .small-front {
+    margin-top: -200px;
+    margin-left: 90px;
+  }
+
+  
+
+  .foot {
+    margin-left: 11px;
+  }
+
+  .me-img {
+    margin-right: 165px;
+    margin-bottom: 50px;
+  }
+
+  .name {
+    font-size: 26px;
+  }
+
+
+  .smaller-mobile {
+    font-size: 16px;
+  }
+
+
+  .smaller-mobile-links {
+    font-size: 16px;
+  }
+
+  .about-school {
+    font-size: 14.5px;
+  }
+
+  .down-about {
+    margin-left: 143px;
+  }
+
+  .small-about {
+    font-size: 16px;
+    margin-left: 25px;
+  }
+
+  .job-desc {
+    font-size: 14.2px;
+  }
+
+  .list-group-item {
+    font-size: 13.5px;
+  }
+
+  .job {
+    font-size: 19px;
+  }
+
+  .date {
+    font-size: 14px;
   }
 }
