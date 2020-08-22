@@ -873,8 +873,17 @@ a.college:hover {
 
   .butts {
     margin-top: -20px;
-    margin-left: -125px;
+    /* margin-left: -125px; */
+    /* margin-left: px; */
     padding-bottom: 30px;
+  }
+
+  .yes-but {
+    font-size: 16px;
+  }
+
+  .yes-but-two {
+    margin-left: 10px;
   }
 
   .projs {

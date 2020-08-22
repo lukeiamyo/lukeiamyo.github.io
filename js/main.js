@@ -39,7 +39,7 @@ function nextWork() {
     currTabNum = parseInt(currTab.innerHTML);
     if (currTabNum != 6) {
         removeActivePane();
-        appendToActivePane(currTabNum);
+        appendActiveToPane(currTabNum);
         if (currTabNum == 5) {
             document.getElementById('next-work').classList.add("disabled");
         }
@@ -56,7 +56,7 @@ function prevWork() {
     currTabNum = parseInt(currTab.innerHTML);
     if (currTabNum != 1) {
         removeActivePane();
-        appendToActivePane(currTabNum - 2);
+        appendActiveToPane(currTabNum - 2);
         if (currTabNum == 2) {
             document.getElementById('prev-work').classList.add("disabled");
         }
@@ -74,7 +74,7 @@ function removeActivePane() {
     activePane.classList.remove("active");
 }
 
-function appendToActivePane(curr) {
+function appendActiveToPane(curr) {
     var tabs = document.getElementsByClassName("tab-pane");
     tabs[curr].classList.add("show");
     tabs[curr].classList.add("active");
