@@ -710,6 +710,16 @@ a.college:hover {
   display: none;
 }
 
+.cons-about {
+  padding-top: 24%;
+  padding-bottom: 10%;
+}
+
+.projs {
+  padding-top: 10%;
+  padding-bottom: 7%;
+}
+
 @media (max-width: 575.98px) { 
   /* ##### Front page ###### */ 
   * {
@@ -826,7 +836,7 @@ a.college:hover {
   .btn-group {
     display: block;
     text-align: right;
-    margin-right: 32%;
+    max-width: 77%;
   }
 
   .no-mas-button {
@@ -837,12 +847,6 @@ a.college:hover {
     /* margin-right: 70%; */
     width: 100%;
     left: 25px;
-  }
-
-  .card-deck {
-    /* display: flex;  */
-    justify-content: center;
-    margin-left: 3px;
   }
 
   .btn-light {
@@ -885,14 +889,25 @@ a.college:hover {
   .yes-but {
     font-size: 16px;
     display: block;
+    /* margin-left: -2900px; */
   }
 
-  .yes-but-two {
-    margin-left: 10px;
+  .card {
+    max-width: 91%;
+  }
+
+  .hi-cards {
+    display: flex; 
+    justify-content: center;
   }
 
   .projs {
     padding-top : 400px;
+  }
+  
+  .cons-about {
+    padding-top: 30%;
+    padding-bottom: 30%;
   }
 }
 
@@ -940,6 +955,17 @@ a.college:hover {
   .job {
     font-size: 23px;
   }
+
+  .cons-about {
+    padding-top: 27%;
+    padding-bottom: 10%;
+  }
+
+  .projs {
+    padding-top: 14%;
+    padding-bottom: 7%;
+  }
+  
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -987,6 +1013,16 @@ a.college:hover {
 
   .date {
     font-size: 14px;
+  }
+
+  .cons-about {
+    padding-top: 34%;
+    padding-bottom: 50%;
+  }
+
+  .projs {
+    padding-top: 20%;
+    padding-bottom: 11%;
   }
 }
 
@@ -1056,5 +1092,15 @@ a.college:hover {
 
   .date {
     font-size: 14px;
+  }
+
+  .cons-about {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .projs {
+    padding-top: 20%;
+    padding-bottom: 10%;
   }
 }
