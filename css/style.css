@@ -199,6 +199,17 @@ ul {
   /* background-color: #f2edf5; */
 }
 
+.guitar {
+  color: #9585a0;
+}
+
+.guitar:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: rgb(235, 233, 233);
+  color: rgb(155, 153, 153)
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -476,7 +487,7 @@ a.college:hover {
   filter: grayscale(100%);
   margin-right: 10%;
   /* padding-right: 10%; */
-  /* margin-top: 50px; */
+  margin-top: 30px;
   
 }
 
