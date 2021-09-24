@@ -1,20 +1,24 @@
 /* karla-regular - latin */
 @font-face {
-  font-family: 'Karla';
+  font-family: "Karla";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/karla-v13-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Karla'), local('Karla-Regular'),
-      url('../fonts/karla-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('../fonts/karla-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-      url('../fonts/karla-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
-      url('../fonts/karla-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-      url('../fonts/karla-v13-latin-regular.svg#Karla') format('svg'); /* Legacy iOS */
+  src: url("../fonts/karla-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Karla"), local("Karla-Regular"),
+    url("../fonts/karla-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/karla-v13-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/karla-v13-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/karla-v13-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/karla-v13-latin-regular.svg#Karla")
+      format("svg"); /* Legacy iOS */
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: 'scroll-behavior: smooth', /* user defined fonts */;
+  font-family: "scroll-behavior: smooth", /* user defined fonts */;
 }
 body {
   background-color: hsl(230, 1%, 98%);
@@ -23,14 +27,15 @@ body {
   /* -webkit-font-smoothing: antialiased; */
   font-size: 18px;
   width: 100%;
-  position: relative
+  position: relative;
 }
 
 * {
   -webkit-overflow-scrolling: touch;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -38,7 +43,6 @@ html, body {
   width: 100%;
   height: 100vh;
 }
-
 
 .navbar {
   background-color: hsl(230, 1%, 98%);
@@ -48,7 +52,6 @@ html, body {
   color: #333333;
   font-family: "Karla", sans-serif;
 }
-
 
 .list-bar.please:after {
   background: none repeat scroll 0 0 transparent;
@@ -78,12 +81,12 @@ html, body {
   width: 3px;
 }
 
-#menu-imp ul{
+#menu-imp ul {
   list-style: none;
   margin-left: -40px;
 }
 
-#menu-imp li{
+#menu-imp li {
   display: inline;
 }
 
@@ -96,7 +99,11 @@ html, body {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -111,19 +118,18 @@ html, body {
   color: rgb(189, 189, 189);
 }
 
-
 .menu-item-line {
-  font-weight: 100
+  font-weight: 100;
 }
 
 .menu-item {
-  color: gray
+  color: gray;
 }
 
 a.list-resume:hover {
   outline: none;
   text-decoration: none;
-  color: #78A386;
+  color: #78a386;
 }
 
 a.list-linkedin:hover {
@@ -207,7 +213,7 @@ ul {
   outline: none;
   text-decoration: none;
   background-color: rgb(235, 233, 233);
-  color: rgb(155, 153, 153)
+  color: rgb(155, 153, 153);
 }
 
 a {
@@ -315,13 +321,13 @@ a.college:hover {
 }
 
 .rr:hover {
-  color: #78A386 !important;
+  color: #78a386 !important;
   outline: none;
   text-decoration: none;
 }
 
 .rr {
-  font-family: "Karla", sans-serif; 
+  font-family: "Karla", sans-serif;
   color: #333333;
   margin-left: 8%;
   margin-right: 2%;
@@ -391,7 +397,6 @@ a.college:hover {
   color: #9585a0;
   text-decoration: none;
 }
-
 
 .btn:focus,
 .btn:active {
@@ -471,7 +476,7 @@ a.college:hover {
 }
 
 .tab-abs {
-  position: absolute; 
+  position: absolute;
 }
 
 .job {
@@ -479,24 +484,23 @@ a.college:hover {
 }
 
 .me-img {
-  height: auto; 
-  width: auto; 
-  max-width: 300px; 
+  height: auto;
+  width: auto;
+  max-width: 300px;
   max-height: 300px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   margin-right: 10%;
   /* padding-right: 10%; */
   margin-top: 30px;
-  
 }
 
 .me-img:hover {
   transform: translateY(-4px);
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
-  transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 .place {
@@ -587,7 +591,7 @@ a.college:hover {
 }
 
 .cons-about {
-  padding-top: 13%;
+  /* padding-top: 8%; */
   padding-bottom: 10%;
 }
 
@@ -644,13 +648,13 @@ a.college:hover {
   font-family: "Karla", sans-serif;
 }
 
-.footer-social ul{
+.footer-social ul {
   list-style: none;
   margin-left: -48px;
   padding-top: 14px;
 }
 
-.footer-social li{
+.footer-social li {
   display: inline;
 }
 
@@ -669,18 +673,18 @@ a.college:hover {
 } */
 
 .foot-linkedin:hover {
-  fill: rgb(106, 141, 202); 
+  fill: rgb(106, 141, 202);
   opacity: 1;
 }
 
 .foot-spotify:hover {
   fill: rgb(102, 184, 130);
-  opacity: 1
+  opacity: 1;
 }
 
 .foot-github:hover {
   fill: #52535c;
-  opacity: 1
+  opacity: 1;
 }
 
 .heart {
@@ -702,7 +706,7 @@ a.college:hover {
   min-height: 70px;
   padding-top: 10%;
   padding-bottom: 5%;
-  margin-right: 25px; 
+  margin-right: 25px;
 }
 
 .creds {
@@ -722,7 +726,7 @@ a.college:hover {
 }
 
 .cons-about {
-  padding-top: 24%;
+  padding-top: 0%;
   padding-bottom: 10%;
 }
 
@@ -731,20 +735,20 @@ a.college:hover {
   padding-bottom: 7%;
 }
 
-@media (max-width: 575.98px) { 
-  /* ##### Front page ###### */ 
+@media (max-width: 575.98px) {
+  /* ##### Front page ###### */
   * {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
-    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
     outline: none !important;
-  } 
-  
+  }
+
   .bear {
     margin-top: -80px;
   }
 
   .navbar {
-    margin-left: -20px; 
+    margin-left: -20px;
   }
 
   .no-more {
@@ -787,7 +791,6 @@ a.college:hover {
     font-weight: 700;
   }
 
-
   #menu-imp {
     margin-left: -20px;
   }
@@ -796,16 +799,16 @@ a.college:hover {
     font-size: 12px;
     text-align: center;
   }
-  
+
   .nav-item {
-    display: none; 
+    display: none;
   }
 
   .down-about {
     margin-left: 43%;
   }
 
-  /* ##### About ###### */ 
+  /* ##### About ###### */
   .small-about {
     font-size: 16px;
   }
@@ -885,7 +888,7 @@ a.college:hover {
     font-size: 17px;
     font-weight: 900px;
   }
-  
+
   .date {
     font-size: 13px;
   }
@@ -908,14 +911,14 @@ a.college:hover {
   }
 
   .hi-cards {
-    display: flex; 
+    display: flex;
     justify-content: center;
   }
 
   .projs {
-    padding-top : 400px;
+    padding-top: 400px;
   }
-  
+
   .cons-about {
     padding-top: 30%;
     padding-bottom: 30%;
@@ -976,10 +979,9 @@ a.college:hover {
     padding-top: 14%;
     padding-bottom: 7%;
   }
-  
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
   .foot {
     margin-left: 32px;
   }
@@ -988,11 +990,9 @@ a.college:hover {
     font-size: 26px;
   }
 
-
   .smaller-mobile {
     font-size: 16px;
   }
-
 
   .smaller-mobile-links {
     font-size: 16px;
@@ -1045,13 +1045,11 @@ a.college:hover {
   .down-about {
     margin-left: -400px;
   }
-  
+
   .small-front {
     margin-top: -200px;
     margin-left: 90px;
   }
-
-  
 
   .foot {
     margin-left: 11px;
@@ -1066,11 +1064,9 @@ a.college:hover {
     font-size: 26px;
   }
 
-
   .smaller-mobile {
     font-size: 16px;
   }
-
 
   .smaller-mobile-links {
     font-size: 16px;
